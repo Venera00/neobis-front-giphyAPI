@@ -4,7 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giphy API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="logo-wrapper">
+        <img src="./assets/giphy.svg" alt="Giphy logo" class="logo" />
+        <h1>Giphy api</h1>
+      </div>
+
+      <form class="search-form">
+        <input
+          type="text"
+          name="search"
+          id="search-input"
+          placeholder="Search"
+        />
+        <button type="submit" class="search-btn">
+          <img
+            src="./assets/—Pngtree—search icon_4699282.png"
+            alt="Search logo"
+            class="search-btn__img"
+          />
+        </button>
+      </form>
+    </header>
+
+    <section class="giphy-content"></section>
+  </body>
 </html>
