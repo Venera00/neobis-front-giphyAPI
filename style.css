@@ -68,4 +68,11 @@ h1 {
 .gif-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+  margin: 2rem;
+}
+
+.gif-item img {
+  width: 25rem;
+  height: 20rem;
 }

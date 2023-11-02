@@ -1,8 +1,15 @@
-async function searchGifs() {
+document.addEventListener("DOMContentLoaded", function () {
+  const searchButton = document.querySelector(".search-btn");
+  searchButton.addEventListener("click", searchGifs);
+});
+
+async function searchGifs(event) {
+  event.preventDefault();
   const input = document.querySelector(".search-input");
   const searchTerm = input.value;
   const apiKey = "Ahchf83unQ7nr78T6AWnABEDZaRNFyKU";
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchTerm}&limit=10`;
+  const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchTerm}&limit=100`;
+  input.value = "";
 
   try {
     const response = await fetch(url);
