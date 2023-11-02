@@ -40,7 +40,7 @@ h1 {
   height: 2.5rem;
 }
 
-#search-input {
+.search-input {
   border: none;
   width: 20rem;
   height: inherit;
@@ -63,4 +63,9 @@ h1 {
 .search-btn__img {
   width: 2rem;
   height: 2rem;
+}
+
+.gif-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }

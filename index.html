@@ -20,13 +20,8 @@
       </div>
 
       <form class="search-form">
-        <input
-          type="text"
-          name="search"
-          id="search-input"
-          placeholder="Search"
-        />
-        <button type="submit" class="search-btn">
+        <input type="text" class="search-input" placeholder="Search" />
+        <button onclick="searchGifs()" class="search-btn">
           <img
             src="./assets/—Pngtree—search icon_4699282.png"
             alt="Search logo"
@@ -36,6 +31,8 @@
       </form>
     </header>
 
-    <section class="giphy-content"></section>
+    <div class="gif-container" id="gif-container"></div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
