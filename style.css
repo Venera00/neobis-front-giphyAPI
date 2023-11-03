@@ -65,7 +65,7 @@ h1 {
   height: 2rem;
 }
 
-.gif-container {
+#gif-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 1rem;

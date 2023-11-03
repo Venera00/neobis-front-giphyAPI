@@ -25,6 +25,6 @@ async function searchGifs(event) {
       gifContainer.appendChild(gifItem);
     });
   } catch (error) {
-    console.error(error);
+    console.log(error);
   }
 }
